@@ -1,0 +1,31 @@
+{
+  "name": "raksha-grid",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/dev.js",
+    "dev:api": "node server/index.js",
+    "dev:web": "vite --host 127.0.0.1 --configLoader runner",
+    "build": "node server/build.js",
+    "preview": "node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --configLoader runner",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.468.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.15.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "concurrently": "^9.1.2"
+  }
+}
