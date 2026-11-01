@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "node server/dev.js",
+    "demo": "node server/demo.js",
+    "gateway": "node server/gateway.js",
     "dev:api": "node server/index.js",
     "dev:web": "vite --host 127.0.0.1 --configLoader runner",
     "build": "node server/build.js",

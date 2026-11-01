@@ -6,3 +6,20 @@ build/
 data/
 .env
 *.log
+
+# Local credentials, signing files and generated artifacts
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+password.txt
+android/output/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+*.original.*
+cloudflared.exe

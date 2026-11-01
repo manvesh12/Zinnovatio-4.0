@@ -1,6 +1,6 @@
 import {build} from 'vite';
 import react from '@vitejs/plugin-react';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdirSync,writeFileSync,copyFileSync} from 'node:fs';
 import path from 'node:path';
 
 // Generate assets in memory, then write synchronously. This also works on
@@ -21,3 +21,4 @@ for(const result of [results].flat()){
  }
 }
 console.log('Build complete: release/');
+copyFileSync(path.resolve('public/sw.js'),path.join(outDir,'sw.js'));
